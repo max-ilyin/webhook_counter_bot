@@ -79,6 +79,7 @@ celerybeat-schedule
 
 # dotenv
 .env
+.venv
 .flaskenv
 
 
@@ -151,3 +152,10 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+#dataBase
+migrations
+app.db
+
+*.json
+*.txt
