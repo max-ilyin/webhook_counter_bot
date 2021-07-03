@@ -5,20 +5,21 @@ import sqlalchemy
 from app import db
 from app.models import Cost
 
-START = """Hi, this is SpendBot. I can help you to count your spendings.\n
-To add spendings just print /add, input amount, product name, it's cost, place and type of product.\n
-Use only one word to describe you spendings, because' «Therefore, since brevity is the soul of wit...».\n
-And separate this words by space. For example /add 1 Carlsberg 20 Market beer\n
+START = """Hi, this is SpendBot. I can help you to count your spendings.
+To add spendings just print /add, input amount, product name, it's cost, place and type of product.
+Use only one word to describe you spendings, because «Therefore, since brevity is the soul of wit...».
+And separate this words by space. For example /add 1 Carlsberg 20 Market beer
 Good luck:)
 """
 
-HELP = """'Hi! This is a list of commands.\n
-/add - add your spendings. Use only one word to describe your spendings and separate these words by space.\n
-/chat_spendings - show all spendings of this chat.\n
-/my_spendings - show only your spendings in this chat.\n
-/spendings_by_category - show spendings of this chat by category. Input category after space.\n
+HELP = """'Hi! This is a list of commands.
+/add - add your spendings. Use only one word to describe your spendings and separate these words by space.
+/chat_spendings - show all spendings of this chat.
+/my_spendings - show only your spendings in this chat.
+/spendings_by_category - show spendings of this chat by category. Input category after space.
 /del_product - delete last product by name that you input. Input category after space.
 """
+
 
 def process_message(chat_id, user_id, user_name, message):
     try:
