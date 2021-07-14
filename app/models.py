@@ -10,7 +10,7 @@ class Cost(db.Model):
     amount = db.Column(db.Float)
     product = db.Column(db.String(140))
     cost = db.Column(db.Float)
-    price = db.Column(db.Float, default=cost/amount)
+    price = db.Column(db.Float)
     place = db.Column(db.String(140))
     product_type = db.Column(db.String(140))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.now())
